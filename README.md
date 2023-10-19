@@ -7,9 +7,14 @@
 # 选择以下其中一条命令在Yunzai根目录执行
 
 Curl
+```
 curl -# -L -o "./plugins/example/派蒙戳一戳.js" "https://github.com/misaka20002/paimonchuoyichuo/raw/main/%E6%B4%BE%E8%92%99%E6%88%B3%E4%B8%80%E6%88%B3.js"
+```
+
 Wget
-wget -N --show-progress -P "./plugins/example/" "https://github.com/misaka20002/paimonchuoyichuo/raw/main/%E6%B4%BE%E8%92%99%E6%88%B3%E4%B8%80%E6%88%B3.js"
+```
+>wget -N --show-progress -P "./plugins/example/" "https://github.com/misaka20002/paimonchuoyichuo/raw/main/%E6%B4%BE%E8%92%99%E6%88%B3%E4%B8%80%E6%88%B3.js"
+```
 
 # 使用说明
 Bot账号需开启戳一戳功能
