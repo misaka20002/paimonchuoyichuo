@@ -177,11 +177,11 @@ let voice_list = ["https://uploadstatic.mihoyo.com/ys-obc/2022/11/02/16576950/4d
     "https://uploadstatic.mihoyo.com/ys-obc/2022/11/02/16576950/ddf937ea4aac1282901270ba491ece88_986083904906531255.mp3",
     "https://uploadstatic.mihoyo.com/ys-obc/2022/11/02/16576950/f514abfbe4a9358e96038850d6d64742_5784748521077424357.mp3"]
 
-let ciku_ = ["_name_今天派蒙已经被戳了_num_次啦，休息一下好不好",
-            "_name_今天派蒙已经被戳了_num_次啦,有完没完！",
-            "_name_今天派蒙已经被戳了_num_次啦,别戳了！！！",
-            "_name_今天派蒙已经被戳了_num_次啦,不准戳了！",
-            "_name_今天派蒙已经被戳了_num_次啦,再戳就坏掉啦！"
+let ciku_ = ["_name_今天已经被戳了_num_次啦，休息一下好不好",
+            "_name_今天已经被戳了_num_次啦,有完没完！",
+            "_name_今天已经被戳了_num_次啦,别戳了！！！",
+            "_name_今天已经被戳了_num_次啦,不准戳了！",
+            "_name_今天已经被戳了_num_次啦,再戳就坏掉啦！"
 ]
 
 export class chuo extends plugin {
@@ -190,7 +190,7 @@ export class chuo extends plugin {
             name: '戳一戳',
             dsc: '戳一戳机器人触发效果',
             event: 'notice.group.poke',
-            priority: 5000,
+            priority: 1000,
             rule: [
                 {
                     fnc: 'chuoyichuo'
