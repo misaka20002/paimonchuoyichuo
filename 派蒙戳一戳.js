@@ -5,8 +5,8 @@ import common from '../../lib/common/common.js'
 import moment from 'moment'
 const path = process.cwd()
 
-let reply_text = 0.7 //文字触发概率
-let reply_img = 0.2 //随机图片触发概率
+let reply_text = 0.9 //文字触发概率
+let reply_img = 0.0 //随机图片触发概率
 let reply_voice = 0.1 //语音触发概率
 let mutepick = 0.0 //禁言触发概率
 
