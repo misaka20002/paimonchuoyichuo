@@ -187,7 +187,7 @@ let ciku_ = ["_name_今天已经被戳了_num_次啦，休息一下好不好",
 export class chuo extends plugin {
     constructor() {
         super({
-            name: '戳一戳',
+            name: '派蒙戳一戳',
             dsc: '戳一戳机器人触发效果',
             event: 'notice.group.poke',
             priority: 1000,
