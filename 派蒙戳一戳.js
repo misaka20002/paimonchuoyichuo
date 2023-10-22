@@ -5,9 +5,9 @@ import common from '../../lib/common/common.js'
 import moment from 'moment'
 const path = process.cwd()
 
-let reply_text = 1.1 //文字触发概率
+let reply_text = 0.9 //文字触发概率
 let reply_img = 0.1 //随机图片触发概率
-let reply_voice = 0.1 //语音触发概率
+let reply_voice = 0.0 //语音触发概率
 let mutepick = 0.0 //禁言触发概率
 
 //自定义文案
@@ -229,7 +229,7 @@ export class chuo extends plugin {
                 let url = `https://api.dujin.org/pic/yuanshen`;
                 let res = await fetch(url).catch((err) => logger.error(err));
                 let msg = [segment.image(res.url)];
-                await e.reply('这是派蒙今天拍的画片哦')
+                await e.reply('这是派蒙今天找到的画片哦')
                 await common.sleep(100)
                 await e.reply(msg);
          }
@@ -237,7 +237,7 @@ export class chuo extends plugin {
                 let url = `https://api.asxe.vip/random.php`;
                 let res = await fetch(url).catch((err) => logger.error(err));
                 let msg = [segment.image(res.url)];
-                await e.reply('把嘴张开（抬起脚）')
+                await e.reply('主人，快看快看派蒙发现了什么？')
                 await common.sleep(100)
                 await e.reply(msg);
     }
